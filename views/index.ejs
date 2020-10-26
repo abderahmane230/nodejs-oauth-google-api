@@ -1,0 +1,63 @@
+<title><%= pageName %></title>
+<style>
+	body{
+		background-color:black;
+		justify-content:center;
+		align-items:center;
+	}
+	.animated{
+		animation: type 6s steps(80) infinite;
+		color:whitesmoke;
+		white-space:nowrap;
+		overflow: hidden;
+		font-family:'Consolas';
+		font-weight:bolder;
+	}
+
+	.form-title{
+		color:whitesmoke;
+		font-weight:bolder;
+	}
+
+	.main-form{
+		padding-top:250px;
+		padding-right:250px;
+		padding-left:250px;
+	}
+
+	.main-form, button{
+		float: left;
+	}
+
+	a{
+		text-decoration:none;
+		font-weight:bold;
+		color:white;
+	}
+
+	i:hover,a:hover{
+		text-decoration:underline;
+		font-weight:bolder;
+		color:green;
+	}
+
+	@keyframes type{
+		0%{
+			width:0ch;
+		}
+		100%{
+			width:20ch;
+		}
+	}
+</style>
+
+<div class="welcome-text">
+	<center>
+		<h2 class="animated">Welcome to oauth api</h2>
+	</center>
+</div>
+
+<div class="main-form">
+	<h3 class="form-title">Log in methods: <iclass="fa fa-face"></i></h3>
+	<button class="btn btn-danger"><a href="/auth/google">Log in with Google <i class="fa fa-google"></i></a></button>
+</div>

@@ -1,0 +1,30 @@
+{
+  "name": "login-api",
+  "version": "1.0.0",
+  "description": "This is a login api usign Node.js, Express.js, MongoDB and GoogleAPI.",
+  "main": "server.js",
+  "scripts": {
+    "start": "cross-env MODE=production node server",
+    "dev": "cross-env MODE=development nodemon server"
+  },
+  "author": "KADDOUR Abderahmane",
+  "license": "MIT",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.17.1",
+    "helmet": "^4.1.1",
+    "mongoose": "^5.10.9",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-google-oauth2": "^0.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.5"
+  }
+}
